@@ -8,12 +8,14 @@
             "content": "All instances use the first two tabs for the outline and action pyramid.\n\nYou can add an arbitrary number of additional tabs and content in your data file.\n> ```\n>\"extraTabs\":\n> [\n>  {\n>    \"icon\": \"\u25E8\",\n>    \"name\": \"Extra Tab(s)\"\n>    \"content\": \"All instances use the first two tabs...\",\n>  },\n>  ...\n>]\n\n\nContent can be formatted using [Github Flavored Markdown](https://github.github.com/gfm/)"
         }
     ],
+    "childrenExpandDefault": false,
     "root": [
     {
         "id": 1000,
         "order": 1,
         "type": "concept",
         "text": "It's difficult to effectively communicate practical information about complicated subjects.",
+        "childrenExpand": true,
         "children":
         [
             {
@@ -21,6 +23,7 @@
                 "order": 1,
                 "type": "concept",
                 "text": "Your intended audience is (probably) a human and all humans are conflicted. One minute, insisting __&quot;Just tell me what to do!&quot;__ The next minute, protesting __&quot;Hold up! That doesn't make sense to me.&quot;__",
+                "childrenExpand": true,
                 "children":
                 [
                     {
