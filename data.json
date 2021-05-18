@@ -1,0 +1,151 @@
+{
+    "headerText": "Outline about the Action Outline",
+    "subheaderText": "A self-referential guide to a not-so complicated problem",
+    "extraTabs": [
+        {
+            "icon": "\u25E8",
+            "name": "Extra Tab(s)",
+            "content": "All instances use the first two tabs for the outline and action pyramid.\n\nYou can add an arbitrary number of additional tabs and content in your data file.\n> ```\n>\"extraTabs\":\n> [\n>  {\n>    \"icon\": \"\u25E8\",\n>    \"name\": \"Extra Tab(s)\"\n>    \"content\": \"All instances use the first two tabs...\",\n>  },\n>  ...\n>]\n\n\nContent can be formatted using [Github Flavored Markdown](https://github.github.com/gfm/)"
+        }
+    ],
+    "root": [
+    {
+        "id": 1000,
+        "order": 1,
+        "type": "concept",
+        "text": "It's difficult to effectively communicate practical information about complicated subjects.",
+        "children":
+        [
+            {
+                "id": 1001,
+                "order": 1,
+                "type": "concept",
+                "text": "Your intended audience is (probably) a human and all humans are conflicted. One minute, insisting __&quot;Just tell me what to do!&quot;__ The next minute, protesting __&quot;Hold up! That doesn't make sense to me.&quot;__",
+                "children":
+                [
+                    {
+                        "id": 1002,
+                        "order": null,
+                        "type": "clarification",
+                        "text": "Were we self-aware, we'd say: __&quot;Just tell me what I need to do as long as it already perfectly aligns with my understanding of the subject, which is obviously fatally flawed, since if it wasn't, I wouldn't need to be told what to do.&quot;__"
+                    },
+                    {
+                        "id": 1005,
+                        "order": 1,
+                        "type": "action",
+                        "text": "Accept that your audience needs both practical, prioritized actions AND a framework of concepts that explain and support those actions."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1003,
+        "order": 2,
+        "type": "concept",
+        "text": "Using this software can make it easier.",
+        "children": 
+        [
+            {
+                "id": 1004,
+                "order": 1,
+                "type": "concept",
+                "text": "It is a system for organizing complex subjects into a hierarchy of concepts, clarifications, references and ultimately practical actions. It also handily extracts those actions into a &quot;Pyramid&quot; (actually it's closer to a Ziggurat) so people can &quot;just be told what to do&quot;",
+                "children": [
+                    {
+                        "id": 1007,
+                        "order": 1,
+                        "type": "concept",
+                        "text": "The primary organizational blocks are &quot;Concepts&quot;, &quot;Actions&quot; and &quot;Clarifications&quot;.",
+                        "children": 
+                        [
+                            {
+                                "id": 1009,
+                                "order": null,
+                                "type":"clarification",
+                                "text": "Concept(s) -> Action -> Clarification(s)"
+                            },
+                            {
+                                "id": 1008,
+                                "order": 1,
+                                "type": "concept",
+                                "text": "Actions are pithy, clear and practical.",
+                                "children":
+                                [
+
+                                    {
+                                        "id": 1006,
+                                        "order": 1,
+                                        "type": "action",
+                                        "text": "Order the actions that you want your audience to implement.",
+                                        "children":[
+                                            {
+                                                "id": 1015,
+                                                "type": "clarification",
+                                                "text": "The software will automatically extract your actions into a hierarchy. However, you can override this default behavior by providing and explicit level value.\n\n```\n{\n  \"id\": ####,\n  \"type\": \"action\",\n  \"text\": \"...\"\n  \"level\": 2\n}\n```"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 1011,
+                                "order": 2,
+                                "type": "concept",
+                                "text": "One or more _concepts_ lead to and undergird an action.",
+                                "children":
+                                [
+                                    {
+                                        "id": 1013,
+                                        "order": 1,
+                                        "level": 2,
+                                        "type": "action",
+                                        "text": "Working from general to specific, organize concepts that support and lead to your actions."
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 1012,
+                                "order": 3,
+                                "type": "concept",
+                                "text": "Clarifications provide additional details and context to flesh out the action.",
+                                "children": [
+                                    {
+                                        "id": 1014,
+                                        "order": 1,
+                                        "level": 3,
+                                        "type": "action",
+                                        "text": "Write clarifications to address the obvious misinterpretations of the action."
+                                    }
+                                ]
+                            }
+                        ] 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1003,
+        "order": 3,
+        "type": "concept",
+        "text": "Deployment is simple.",
+        "children": 
+        [
+            {
+                "id": 1016,
+                "order": 1,
+                "type": "action",
+                "level": 3,
+                "text": "Upload your data file and add its URI to your environmnet variables."
+            },
+            {
+                "id": 1017,
+                "order": 2,
+                "type": "action",
+                "level": 3,
+                "text": "Deploy to Netlify"
+            }
+        ]
+    }
+]}
